@@ -37,7 +37,7 @@ def run(request):
         os.system('python main.py < input.txt > output.txt')
 
     os.chdir(BASE_DIR)
-    time.sleep(3)
+    # time.sleep(3)
     out = open(os.path.join(BASE_DIR, 'Codes/output.txt'), "r")
     code_output = out.read()
     if os.stat(os.path.join(BASE_DIR, "Codes/output.log")).st_size != 0:
